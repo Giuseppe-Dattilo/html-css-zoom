@@ -1,0 +1,156 @@
+/* Reset */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Generics */
+
+body {
+font-family: sans-serif;
+}
+
+/* Utils */
+
+.container {
+max-width: 1400px;
+margin: 0px auto;
+}
+
+header {
+height: 80px;
+background-color: black;
+padding: 10px;
+}
+
+/* # Header Navbar */
+
+header .navbar {
+height: 100%;
+display: flex;
+align-items: start;
+justify-content: flex-end;
+
+}
+
+header .navbar-actions{
+display: flex;
+gap: 5px;
+}
+
+header .navbar-actions button{ 
+border-radius: 5px;
+font-size: 10px;
+padding: 5px 8px;
+color: white;
+background-color:#323232;
+border: 1px solid #323232;
+cursor: pointer;
+}
+
+.fa-table-cells {
+margin-right: 5px;
+}
+
+/* Main */
+
+main{
+height: calc(100vh - 160px);
+padding: 20px;
+background-color: black;
+overflow-y: auto;
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+margin: 0 -10px; 
+justify-content: center;
+
+}
+
+.card {
+position: relative;
+margin: 10px;
+
+}
+
+.card-image img {
+content:url("https://picsum.photos/seed/picsum/200/300");
+height: 200px;
+width: 250px;
+display: block;
+background-image: cover;
+position: center;
+}
+
+.card-nome {
+color: white;
+background-color: rgba(0,0,0,0.3);
+padding: 5px;
+position: absolute;
+bottom: 0;
+left: 0;
+}
+
+.card-nome button {
+background-color: transparent;
+border: 1px solid transparent;
+cursor: pointer;
+}
+
+.fa-microphone-slash {
+color: white;
+}
+
+/* Footer */
+
+footer{
+height: 80px;
+background-color: #222222;
+}
+
+/* Footer Navbar */
+
+footer .navbar {
+height: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 10px;
+}
+
+footer .navbar > * {
+flex-basis: (100% / 3);
+border: 2ps solid white;
+color: white;
+}
+
+.icon{
+font-size: 20px;
+margin-bottom: 7px;
+cursor: pointer;
+}
+
+.setting{
+text-align: center;
+}
+
+.navbar-left, .navbar-center, .navbar-right{
+display: flex;
+gap: 10px;
+justify-content: center;
+}
+
+footer .navbar button{
+height: 80px;
+background-color: #4a4a4a;
+color: red;
+border: 1px solid #4a4a4a;
+padding: 20px;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
